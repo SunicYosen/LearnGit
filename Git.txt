@@ -74,8 +74,6 @@
   git branch ## control branches
     -d <branchname> ##Delete <branchname>
     
-    
- 
 2.Git branch
 
 
