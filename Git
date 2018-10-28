@@ -41,6 +41,14 @@
 
   git reflog      //Record all command, so you can call back.[会退到任意位置]
 
+  git checkout -- <filename>  //Callback last version when not add modify to Repository
+    // -- is important. 
+    //[尚未添加到暂存区，手动把文件恢复到上一个版本的状态，如果已经添加到Stage，那么回退到添加之后]
+    //If have added to stage, 'git reset HEAD <file>' could callback.
+  
+
+
+
 2.Git knowledge
   .git
      .git folder is the version repository.[版本库]
