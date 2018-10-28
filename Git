@@ -8,4 +8,18 @@
                git config --global user.email "email@example.com"
 
 1.Git usage
-  git add $filename   //Add/Initial file to git repository
+  git init             //Init repository
+
+  git add <filename>   //Add file to git repository
+  git commit -m <meaasage> //Add commit of this update
+  git status           //The status of repository
+  git diff  <filename> //The changes detail of file
+  git log              //List the log/Journal of repository
+    --pretty=oneline   //List one line of a log
+  git reset            //return to last version
+    --hard
+    HEAD        //Cuurent version
+    HEAD^       //Last version
+    HEAD^^      //Last second version
+    HEAD~100    //Last 100th version
+
