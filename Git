@@ -1,6 +1,7 @@
 ====Git Skills====
-++Sunic Yosen++
-++Oct 28 2018++
+--Sunic Yosen
+--Oct 28 2018
+--Learn from: https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
 
 0.Git Environment
   0) Install Git: sudo apt install git
@@ -10,22 +11,43 @@
 1.Git usage
   git init             //Init repository
 
-  git add <filename>   //Add file to git repository
+  git add <filename>   //Add file to git repository 
+    //[把文件添加进去，实际上就是把文件修改添加到[暂存区]]
   
-  git commit -m <meaasage> //Commit of this update and give comment with <-m>
+  git commit -m <meaasage> //Commit of this update and give comment with <-m> [提交&注释]
+    //[提交更改，实际上就是把暂存区的所有内容提交到当前分支]
 
   git status           //The status of repository
-
+    
   git diff  <filename> //The changes detail of file
-
+     
   git log              //List the log/Journal of repository
     --pretty=oneline   //List one line of a log
 
   git reset            //return to last version
     --hard
-    HEAD        //Cuurent version
-    HEAD^       //Last version
-    HEAD^^      //Last second version
-    HEAD~100    //Last 100th version
-    eg: git reset --hard HEAD^   //Return last version
+      HEAD        //Cuurent version
+      HEAD^       //Last version
+      HEAD^^      //Last second version
+      HEAD~100    //Last 100th version
+      eg: git reset --hard HEAD^   //Return last version
+      <commit id> //Return/Forward to <commit id> version
+                  //Could Just Give the front of commit id
 
+  git reflog      //Record all command, so you can call back.[会退到任意位置]
+
+2.Git knowledge
+  .git
+     .git folder is the version repository.[版本库]
+       Stage/index [暂存区]
+       branch [分支] -> First branch: master -> pointer: HEAD
+       |-----------|            |----------------------------------|
+       | WorkSpace |            |             Repository           |
+       |           |            |                                  |
+       |   |File1  |            |  |----------|        |--------|  |
+       |   |File2  |   Git Add  |  |  Stage   |        | Master |  | 
+       |   |Folder |----------->|  |   File1  | Commit |  File1 |  |
+       |     |Fl1  |            |  |   File2  |------->|  File2 |  |
+       |     |Fl2  |            |  |          |        |   ...  |  |
+       |           |            |  |----------|        |--------|  |
+       |-----------|            |----------------------------------|
