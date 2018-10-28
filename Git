@@ -11,15 +11,21 @@
   git init             //Init repository
 
   git add <filename>   //Add file to git repository
-  git commit -m <meaasage> //Add commit of this update
+  
+  git commit -m <meaasage> //Commit of this update and give comment with <-m>
+
   git status           //The status of repository
+
   git diff  <filename> //The changes detail of file
+
   git log              //List the log/Journal of repository
     --pretty=oneline   //List one line of a log
+
   git reset            //return to last version
     --hard
     HEAD        //Cuurent version
     HEAD^       //Last version
     HEAD^^      //Last second version
     HEAD~100    //Last 100th version
+    eg: git reset --hard HEAD^   //Return last version
 
