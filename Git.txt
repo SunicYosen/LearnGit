@@ -72,6 +72,8 @@
     ##
   
   git branch ## control branches
+    ##Check the branches.
+    <branchname> ##Create Branch
     -d <branchname> ##Delete <branchname>
     
 2.Git branch
