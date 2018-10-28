@@ -67,9 +67,6 @@
   git check ##Branch usage
     -b  <branchname> ##Create and switch to a new branch
     <branchname> ##Switch to another branch
-    
-  
-
 
 2.Git branch
 
