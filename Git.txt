@@ -68,6 +68,9 @@
     -b  <branchname> ##Create and switch to a new branch
     <branchname> ##Switch to another branch
 
+  git merge <branchname> ##Merge Different branches.
+    
+ 
 2.Git branch
 
 
