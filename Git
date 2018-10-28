@@ -1,0 +1,11 @@
+====Git Skills====
+++Sunic Yosen++
+++Oct 28 2018++
+
+0.Git Environment
+  0) Install Git: sudo apt install git
+  1) Set user: git config --global user.name "Your Name"
+               git config --global user.email "email@example.com"
+
+1.Git usage
+  git add $filename   //Add/Initial file to git repository
