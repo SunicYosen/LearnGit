@@ -20,7 +20,12 @@
   git status           //The status of repository
     
   git diff  <filename> //The changes detail of file
-     
+    <repository>       //Give the Version id
+    HEAD               //Current version
+    eg: git diff HEAD -- <filename>
+        git diff --cached 
+        [比较的是暂存区的文件与仓库分支里（上次git commit 后的内容）的区别。] 
+
   git log              //List the log/Journal of repository
     --pretty=oneline   //List one line of a log
 
@@ -39,12 +44,12 @@
 2.Git knowledge
   .git
      .git folder is the version repository.[版本库]
-       Stage/index [暂存区]
+       Stage/index [暂存区] [需要提交的文件修改通通放到暂存区，然后一次性提交暂存区的所有修改]
        branch [分支] -> First branch: master -> pointer: HEAD
        |-----------|            |----------------------------------|
        | WorkSpace |            |             Repository           |
        |           |            |                                  |
-       |   |File1  |            |  |----------|        |--------|  |
+       |   |File1  |            |  |----------|  HEAD->|--------|  |
        |   |File2  |   Git Add  |  |  Stage   |        | Master |  | 
        |   |Folder |----------->|  |   File1  | Commit |  File1 |  |
        |     |Fl1  |            |  |   File2  |------->|  File2 |  |
