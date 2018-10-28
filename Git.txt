@@ -65,7 +65,9 @@
         git push origin master
     
   git check ##Branch usage
-    -b  ##Create 
+    -b  <branchname> ##Create and switch to a new branch
+    <branchname> ##Switch to another branch
+    
   
 
 
