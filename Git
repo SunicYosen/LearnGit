@@ -47,6 +47,10 @@
     //If have added to stage, 'git reset HEAD <file>' could callback, and then 'git checkout --'
     //If you have committed, 'git reset --hard <commit id> to return last version.
   
+  git rm <filename>
+    //Remove file from repository. Then you should 'git commit -m <meaasage>' to commit to repository
+    
+
 
 2.Git knowledge
    a) .git
