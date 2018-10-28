@@ -69,6 +69,11 @@
     <branchname> ##Switch to another branch
 
   git merge <branchname> ##Merge Different branches.
+    ##
+  
+  git branch ## control branches
+    -d <branchname> ##Delete <branchname>
+    
     
  
 2.Git branch
