@@ -44,13 +44,12 @@
   git checkout -- <filename>  //Callback last version when not add modify to Repository
     // -- is important. 
     //[尚未添加到暂存区，手动把文件恢复到上一个版本的状态，如果已经添加到Stage，那么回退到添加之后]
-    //If have added to stage, 'git reset HEAD <file>' could callback.
+    //If have added to stage, 'git reset HEAD <file>' could callback, and then 'git checkout --'
+    //If you have committed, 'git reset --hard <commit id> to return last version.
   
 
-
-
 2.Git knowledge
-  .git
+   a) .git
      .git folder is the version repository.[版本库]
        Stage/index [暂存区] [需要提交的文件修改通通放到暂存区，然后一次性提交暂存区的所有修改]
        branch [分支] -> First branch: master -> pointer: HEAD
@@ -64,3 +63,10 @@
        |     |Fl2  |            |  |          |        |   ...  |  |
        |           |            |  |----------|        |--------|  |
        |-----------|            |----------------------------------|
+
+   b) Status for working tree.
+       Changes not staged for commit  //Have not staged
+       Changes to be committed        //Have not committed
+       nothing to commit, working tree clean //Clean
+
+
