@@ -134,6 +134,27 @@
 
   git add -f <fileName>           ## If ignore by .gitignore add force
 
+  github fork 
+                                Clone
+          |---------------------------------|
+    |------------|        |------------|    |OR   |------------|
+    |            |        |            |    |     |            |
+    |  Other'    |  fork  |     My     |  Clone   |   Local    |
+    | Repository |------->| Repository |--------->| Repository |
+    |            |        |            |          |            |
+    |------------|        |------------|          |------------|
+          ^        github        ^
+          |----------------------|
+    
+    Can remote <Other' Repository> and <My Repository> in github, May be:
+     <Other' Repository> ---> git remote add origin git@github.com:xxxx/xxx.git
+     <My Repository>     ---> git remote add develop git@github.com:sunyongshuai/xxxx.git
+
+     <git remote -v > will get two remote repositories.
+     
+
+     
+
 2.Git branch
   Conflict: 
   o----------o------------o <---master <---HEAD
@@ -180,3 +201,6 @@ V-----------o------------------o-------------o------o <----Personal [Yosen]
 
    c) .gitignore
      ignore some files when git.
+    
+
+  
