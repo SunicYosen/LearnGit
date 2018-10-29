@@ -52,9 +52,10 @@
   git rm <filename>
     ##Remove file from repository. Then you should 'git commit -m <message>' to commit to repository
 
-  git remote add origin <remote Address>
-    ##Add remote repository named <origin> 
-    ##[关联一个远程库]
+  git remote
+    ## Check remote repository  
+    add origin <remote Address> ##Add remote repository named <origin> 
+      ##[关联一个远程库]
     
   git push ##Push to remote
     -u ##Used at the first time. 
@@ -84,21 +85,37 @@
     ##Check the branches.
     <branchname> ##Create Branch
     -d <branchname> ##Delete <branchname>
+
+  git stash  ##Cache what are doing but not committed
+    list   ## Check the stash list
+    apply  ## resume the WorkSpace
+      <stashName>  ## resume to special stash
+      eg:  git stash apply stash@{0}
+    drop   ## delete after apply
+    pop    ## resume and delete
     
+
 2.Git branch
   Conflict: 
   o----------o------------o <---master <---HEAD
              |                                     ? Conflict
              v------------o <---dev
 
-  branches
+  Suggest Branches:
   o----------------------o-----------------------------o <----Master [Stable]
   |                      ^                             ^
   v                      |                             |
-  O-------o--------------o----------o------------------o <----dev [working]
-  |       ^              ^                             ^
-  |       |              |                             |
-  V-------o------o-------o----------o---------o--------o <----Personal [sunic]
+  O-------o--------------o-------o---------------------o <----dev [working]
+ /|       ^              ^      /                    / ^
+| |       |              |     |                    |  |
+| V-------o------o-------o-----|----o---------o-----|--o <----Personal [Sunic]
+|                              |                    |
+V-----------o------------------o-------------o------o <----Personal [Yosen]
+
+  BUG Branch:
+
+  Feature Branch:
+
 
 
 3.Git knowledge
