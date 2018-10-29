@@ -77,9 +77,13 @@
     -d <branchname> ##Delete <branchname>
     
 2.Git branch
+<<<<<<< HEAD
   Conflict: 
   
 
+=======
+  Conflict: 
+>>>>>>> sunic
 
 3.Git knowledge
    a) .git
