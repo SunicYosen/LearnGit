@@ -132,7 +132,7 @@
    
   git check-ignore -v <fileName>  ## Check <fileName> ignore
 
-  git add -f <fileName>           ## If ignore by .gitignore
+  git add -f <fileName>           ## If ignore by .gitignore add force
 
 2.Git branch
   Conflict: 
