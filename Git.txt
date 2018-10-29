@@ -77,6 +77,8 @@
     -d <branchname> ##Delete <branchname>
     
 2.Git branch
+  Conflict: 
+  
 
 
 3.Git knowledge
