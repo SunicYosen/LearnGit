@@ -29,6 +29,7 @@
   git log              ## List the log/Journal of repository
     --pretty=oneline   ## List one line of a log
     --graph            ## See log with graphic 
+    -<count>           ## List <count> logs
 
   git reset            ##return to last version
     --hard
@@ -104,7 +105,34 @@
 
   git rebase ##rebase git log 
     ##
+
+  git tag ##tag the version
+    ##Check tag the branch version
+    <tagName> ##Tag as <tagName>
+    <tagName> <commitID> ##Tag <commitID> as <tagName>
+    -a <signature> ##signature
+    -m <comment> ##comment
+    -d <tagName> ##Delete <tagName>
     
+    git push origin <tagName> ##push <tagName> to remote
+    git push origin --tags ##push all tags to remote
+    git push origin :refs/tags/<tagName> ##delete tags from remote
+      ##You should delete <tagName> at local first
+
+
+  git show <tagName> ## Show info of <tagName>
+
+  git config ##git config at $HOME/.gitconfig
+    --global ##global setting
+
+    color.ui [true/false]  ##git color theme
+    user.name=<name>   ##
+    user.email=<email> ##   
+    alias.<name1> <name2> ##alias name2 -> name1
+   
+  git check-ignore -v <fileName>  ## Check <fileName> ignore
+
+  git add -f <fileName>           ## If ignore by .gitignore
 
 2.Git branch
   Conflict: 
@@ -150,5 +178,5 @@ V-----------o------------------o-------------o------o <----Personal [Yosen]
        Changes to be committed        ##Have not committed
        nothing to commit, working tree clean ##Clean
 
-
-
+   c) .gitignore
+     ignore some files when git.
