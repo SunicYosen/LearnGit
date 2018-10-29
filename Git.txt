@@ -56,13 +56,17 @@
     ## Check remote repository  
     add origin <remote Address> ##Add remote repository named <origin> 
       ##[关联一个远程库]
+    -v ## check remote information
     
   git push ##Push to remote
     -u ##Used at the first time. 
        ##Git will push local repository to remote, 
        ##And it will make connect between local and remote.
+
     origin ##Remote repository name.
-    master ##Remote branch name.
+      master ##Remote branch name.
+      <branch name> ##push to origin/<branch name>
+
     eg: git push -u origin master [First time]
         git push origin master
     
@@ -85,6 +89,7 @@
     ##Check the branches.
     <branchname> ##Create Branch
     -d <branchname> ##Delete <branchname>
+    --set-upstream-to=origin/<branchname> <branchname>
 
   git stash  ##Cache what are doing but not committed
     list   ## Check the stash list
@@ -93,6 +98,8 @@
       eg:  git stash apply stash@{0}
     drop   ## delete after apply
     pop    ## resume and delete
+
+  git pull ##fetch remote branch
     
 
 2.Git branch
