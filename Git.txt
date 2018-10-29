@@ -72,7 +72,8 @@
 
 
 2.Git branch
-
+  Diffenrent branch conflict:
+  Conflict: 
 
 3.Git knowledge
    a) .git
