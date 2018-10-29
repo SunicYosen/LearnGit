@@ -79,8 +79,6 @@
 2.Git branch
 <<<<<<< HEAD
   Conflict: 
-  
-
 =======
   Conflict: 
 >>>>>>> sunic
