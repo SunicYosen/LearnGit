@@ -100,6 +100,10 @@
     pop    ## resume and delete
 
   git pull ##fetch remote branch
+    ##
+
+  git rebase ##rebase git log 
+    ##
     
 
 2.Git branch
