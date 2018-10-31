@@ -201,6 +201,8 @@ V-----------o------------------o-------------o------o <----Personal [Yosen]
 
    c) .gitignore
      ignore some files when git.
+     *  ##stand for all. Include sub-dir
+     
     
 
   
