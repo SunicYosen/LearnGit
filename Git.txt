@@ -90,7 +90,9 @@
     ##Check the branches.
     <branchname> ##Create Branch
     -d <branchname> ##Delete <branchname>
-    --set-upstream-to=origin/<branchname> <branchname>
+    --set-upstream-to=<remote>/<branchname> <branchname>  
+    --set-upstream-to=<remote>
+    ## change default push remote to  
 
   git stash  ##Cache what are doing but not committed
     list   ## Check the stash list
@@ -202,6 +204,9 @@ V-----------o------------------o-------------o------o <----Personal [Yosen]
    c) .gitignore
      ignore some files when git.
      *  ##stand for all. Include sub-dir
+
+     ![fileName] ##stand for don't ignore 
+
      
     
 
